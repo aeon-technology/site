@@ -32,6 +32,21 @@ body {
     }
   }
 }
+
+.c-action-links {
+  display: flex;
+  gap: 16px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0.5rem 1rem;
+    background: #ddd;
+    border-radius: 24px;
+  }
+}
+
 .c-site-header {
   padding-block: 1rem;
   border-bottom: 1px solid #e2e8f0;
