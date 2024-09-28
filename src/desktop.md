@@ -10,7 +10,7 @@ eleventyNavigation:
 Direct Force Field (DFF) is a specialized software that makes and uses high quality force field parameters with unlimited coverage to meet the ever-increasing demands in atomistic simulations. The latest version is DFF 8, which has the following major components:
 
 <div>
-<a href="/get-started">Get started</a>
+<a href="./get-started">Get started</a>
 <a href="https://docs.directforcefield.com">Documentation</a>
 </div>
 
