@@ -17,4 +17,4 @@ eleventyNavigation:
 
 For technical and scientific issues, use the [contact form](./contact).
 
-For any general issues, please contact us by sending an email to: support@directforcefield.com
+For sales and other issues, please contact us by sending an email to: support@directforcefield.com
