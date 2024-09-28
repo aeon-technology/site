@@ -18,6 +18,20 @@ body {
 }
 
 /* components */
+.c-breadcrumb {
+  ul {
+    display: flex;
+    list-style: none;
+    padding-inline: 0;
+  }
+
+  li {
+    &::after {
+      content: "›";
+      margin-inline: 8px;
+    }
+  }
+}
 .c-site-header {
   padding-block: 1rem;
   border-bottom: 1px solid #e2e8f0;

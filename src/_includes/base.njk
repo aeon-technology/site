@@ -19,8 +19,10 @@
     </header>
     <div>
       <main class="u-clamp-width">
-      {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
-      {{ content | safe }}
+        <nav class="c-breadcrumb">
+          {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+        </nav>
+        {{ content | safe }}
       </main> 
     </div>
   </body>
