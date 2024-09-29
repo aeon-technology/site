@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+        }
+      }
+    </script>
+    <style>
+      .hero-media {
+        display: grid;
+        gap: 2rem;
+        align-items: center;
+        justify-items: center;
+
+        @media (min-width: 40rem) {
+          grid-template-columns: 1fr auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="u-scroll-main">
+    <header class="c-site-header">
+      <div class="u-split u-clamp-width">
+        <a href="/">Direct Force Field</a>
+        <nav class="c-action-links">
+          <a href="/desktop">Desktop</a>
+          <a href="/web">Web</a>
+          <a href="/support">Support</a>
+        </nav>
+      </div>
+    </header>
+    <div>
+      <main class="u-clamp-width">
+        <nav class="c-breadcrumb">
+          {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+        </nav>
+        <div class="hero-media">
+          <canvas id="molecules" width="240" height="240"></canvas>
+          <div>
+            {{ content | safe }}
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/molecules.js"></script>
+
+  </body>
+</html>

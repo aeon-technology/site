@@ -1,10 +1,10 @@
 ---
-layout: base.njk
+layout: home.njk
 eleventyNavigation:
   key: Home
 ---
 
-Welcome to Direct Force field Website!
+# Welcome to Direct Force Field
 
 This site provides information about Direct Force Field (DFF) software and online computing of using DFF to assign force field parameters.
 
