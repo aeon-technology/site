@@ -5,7 +5,7 @@ eleventyNavigation:
   parent: Home
 ---
 
-# WebDFF - Online Computing of DFF Standard
+# Direct Force Field Web
 
 DFFWeb is an online version of the standard edition of DFF 8. This program assigns and exports force field parameters for input molecular model using TEAMFF database.
 
